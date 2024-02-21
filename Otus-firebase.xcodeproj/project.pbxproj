@@ -13,6 +13,13 @@
 		86EE716C2B80AF980051FF3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86EE716A2B80AF980051FF3A /* Main.storyboard */; };
 		86EE716E2B80AF9B0051FF3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86EE716D2B80AF9B0051FF3A /* Assets.xcassets */; };
 		86EE71712B80AF9B0051FF3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86EE716F2B80AF9B0051FF3A /* LaunchScreen.storyboard */; };
+		86EE717A2B80B06C0051FF3A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 86EE71792B80B06C0051FF3A /* FirebaseAnalytics */; };
+		86EE717C2B80B06C0051FF3A /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 86EE717B2B80B06C0051FF3A /* FirebaseAnalyticsOnDeviceConversion */; };
+		86EE717E2B80B06C0051FF3A /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 86EE717D2B80B06C0051FF3A /* FirebaseAnalyticsSwift */; };
+		86EE71802B80B06C0051FF3A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 86EE717F2B80B06C0051FF3A /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		86EE71822B80B06C0051FF3A /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 86EE71812B80B06C0051FF3A /* FirebaseAppCheck */; };
+		86EE71842B80B1F60051FF3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86EE71832B80B1F60051FF3A /* GoogleService-Info.plist */; };
+		86EE71872B80BC770051FF3A /* CrushliticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE71862B80BC770051FF3A /* CrushliticsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,8 @@
 		86EE716D2B80AF9B0051FF3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86EE71702B80AF9B0051FF3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86EE71722B80AF9B0051FF3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86EE71832B80B1F60051FF3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		86EE71862B80BC770051FF3A /* CrushliticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrushliticsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EE717E2B80B06C0051FF3A /* FirebaseAnalyticsSwift in Frameworks */,
+				86EE717A2B80B06C0051FF3A /* FirebaseAnalytics in Frameworks */,
+				86EE717C2B80B06C0051FF3A /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				86EE71822B80B06C0051FF3A /* FirebaseAppCheck in Frameworks */,
+				86EE71802B80B06C0051FF3A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +72,13 @@
 			children = (
 				86EE71642B80AF980051FF3A /* AppDelegate.swift */,
 				86EE71662B80AF980051FF3A /* SceneDelegate.swift */,
+				86EE71862B80BC770051FF3A /* CrushliticsService.swift */,
 				86EE71682B80AF980051FF3A /* ViewController.swift */,
 				86EE716A2B80AF980051FF3A /* Main.storyboard */,
 				86EE716D2B80AF9B0051FF3A /* Assets.xcassets */,
 				86EE716F2B80AF9B0051FF3A /* LaunchScreen.storyboard */,
 				86EE71722B80AF9B0051FF3A /* Info.plist */,
+				86EE71832B80B1F60051FF3A /* GoogleService-Info.plist */,
 			);
 			path = "Otus-firebase";
 			sourceTree = "<group>";
@@ -77,12 +93,20 @@
 				86EE715D2B80AF980051FF3A /* Sources */,
 				86EE715E2B80AF980051FF3A /* Frameworks */,
 				86EE715F2B80AF980051FF3A /* Resources */,
+				86EE71852B80B2C30051FF3A /* Firebase */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Otus-firebase";
+			packageProductDependencies = (
+				86EE71792B80B06C0051FF3A /* FirebaseAnalytics */,
+				86EE717B2B80B06C0051FF3A /* FirebaseAnalyticsOnDeviceConversion */,
+				86EE717D2B80B06C0051FF3A /* FirebaseAnalyticsSwift */,
+				86EE717F2B80B06C0051FF3A /* FirebaseAnalyticsWithoutAdIdSupport */,
+				86EE71812B80B06C0051FF3A /* FirebaseAppCheck */,
+			);
 			productName = "Otus-firebase";
 			productReference = 86EE71612B80AF980051FF3A /* Otus-firebase.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +135,9 @@
 				Base,
 			);
 			mainGroup = 86EE71582B80AF970051FF3A;
+			packageReferences = (
+				86EE71782B80B06C0051FF3A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 86EE71622B80AF980051FF3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86EE71712B80AF9B0051FF3A /* LaunchScreen.storyboard in Resources */,
+				86EE71842B80B1F60051FF3A /* GoogleService-Info.plist in Resources */,
 				86EE716E2B80AF9B0051FF3A /* Assets.xcassets in Resources */,
 				86EE716C2B80AF980051FF3A /* Main.storyboard in Resources */,
 			);
@@ -133,12 +161,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		86EE71852B80B2C30051FF3A /* Firebase */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(SRCROOT)/$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = Firebase;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		86EE715D2B80AF980051FF3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				86EE71692B80AF980051FF3A /* ViewController.swift in Sources */,
+				86EE71872B80BC770051FF3A /* CrushliticsService.swift in Sources */,
 				86EE71652B80AF980051FF3A /* AppDelegate.swift in Sources */,
 				86EE71672B80AF980051FF3A /* SceneDelegate.swift in Sources */,
 			);
@@ -363,6 +418,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86EE71782B80B06C0051FF3A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86EE71792B80B06C0051FF3A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86EE71782B80B06C0051FF3A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		86EE717B2B80B06C0051FF3A /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86EE71782B80B06C0051FF3A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		86EE717D2B80B06C0051FF3A /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86EE71782B80B06C0051FF3A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		86EE717F2B80B06C0051FF3A /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86EE71782B80B06C0051FF3A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		86EE71812B80B06C0051FF3A /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86EE71782B80B06C0051FF3A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86EE71592B80AF970051FF3A /* Project object */;
 }

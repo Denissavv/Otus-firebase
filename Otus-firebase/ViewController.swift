@@ -15,5 +15,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func tapCrush(_ sender: Any) {
+        fatalError("This is crush")
+    }
 }
 

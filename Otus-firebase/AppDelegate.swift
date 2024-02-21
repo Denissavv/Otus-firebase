@@ -1,11 +1,12 @@
 //
 //  AppDelegate.swift
-//  Otus-firebase
+//  test-firebase-1-02-24
 //
-//  Created by EVIA on 17.02.2024.
+//  Created by Anton Marunko on 01.02.2024.
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 
